@@ -1,0 +1,5 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+"GET /aboutme HTTP/1.1" 301 0
+"GET /aboutme/ HTTP/1.1" 200 436
