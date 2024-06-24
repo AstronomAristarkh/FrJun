@@ -3,3 +3,61 @@ Watching for file changes with StatReloader
 "GET / HTTP/1.1" 200 13
 "GET /aboutme HTTP/1.1" 301 0
 "GET /aboutme/ HTTP/1.1" 200 436
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+"GET /flipcoinlast HTTP/1.1" 301 0
+Internal Server Error: /flipcoinlast/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myapp\views.py", line 43, in FlipCoinLast
+    flip = CoinResult.get_last_n_flips_stats(3)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myapp\models.py", line 14, in get_last_n_flips_stats
+    flips = CoinResult.objects.order_by('-timetamp')[:n]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 2253, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'timetamp' into field. Choices are: flip_time, id, result
+"GET /flipcoinlast/ HTTP/1.1" 500 88875
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+Not Found: /flipcoinresult
+"GET /flipcoinresult HTTP/1.1" 404 3327
+"GET /flipcoinlast HTTP/1.1" 301 0
+Internal Server Error: /flipcoinlast/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myapp\views.py", line 43, in FlipCoinLast
+    flip = CoinResult.get_last_n_flips_stats(3)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myapp\models.py", line 14, in get_last_n_flips_stats
+    flips = CoinResult.objects.order_by('-timetamp')[:n]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 2253, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'timetamp' into field. Choices are: flip_time, id, result
+"GET /flipcoinlast/ HTTP/1.1" 500 88875

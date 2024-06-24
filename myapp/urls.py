@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 
 urlpatterns = [
@@ -8,4 +8,6 @@ urlpatterns = [
  path('random_number/', views.random_number, name='random_number'),
  path('glav/', views.glav, name='glav'),
  path('aboutme/', views.aboutme, name='aboutme'),
+ #path('flipcoinlast/', views.FlipCoinLast, name='FlipCoinLast'),
+ #path('test/', include('myapp.urls'))
 ]
