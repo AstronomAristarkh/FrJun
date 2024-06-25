@@ -1,6 +1,6 @@
 from django.urls import path, include
-from . import views
+from .views import Last
 
 urlpatterns = [
- path('', views.index, name='index'),
+ path('last/<int:clientid>/<int:days>/', Last.as_view(), name='last'),
 ]
