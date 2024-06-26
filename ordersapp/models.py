@@ -17,6 +17,7 @@ class Product(models.Model):
     price = models.IntegerField()
     quantity = models.IntegerField()
     registration_date = models.DateField()
+    image = models.ImageField()
 
     def __str__(self):
         return f'Имя: {self.name}, описание: {self.description}, цена: {self.price}, количество: {self.quantity}, дата регистрации: {self.registration_date}'
@@ -27,3 +28,5 @@ class Order(models.Model):
     product_id = models.ForeignKey(Product, on_delete=models.CASCADE, default = 1)
     amount = models.IntegerField()
     making_date = models.DateField()
+
+
