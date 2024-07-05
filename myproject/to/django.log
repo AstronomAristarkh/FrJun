@@ -3,3 +3,1940 @@ Watching for file changes with StatReloader
 "GET / HTTP/1.1" 200 13
 "GET /aboutme HTTP/1.1" 301 0
 "GET /aboutme/ HTTP/1.1" 200 436
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+"GET /flipcoinlast HTTP/1.1" 301 0
+Internal Server Error: /flipcoinlast/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myapp\views.py", line 43, in FlipCoinLast
+    flip = CoinResult.get_last_n_flips_stats(3)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myapp\models.py", line 14, in get_last_n_flips_stats
+    flips = CoinResult.objects.order_by('-timetamp')[:n]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 2253, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'timetamp' into field. Choices are: flip_time, id, result
+"GET /flipcoinlast/ HTTP/1.1" 500 88875
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+Not Found: /flipcoinresult
+"GET /flipcoinresult HTTP/1.1" 404 3327
+"GET /flipcoinlast HTTP/1.1" 301 0
+Internal Server Error: /flipcoinlast/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myapp\views.py", line 43, in FlipCoinLast
+    flip = CoinResult.get_last_n_flips_stats(3)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myapp\models.py", line 14, in get_last_n_flips_stats
+    flips = CoinResult.objects.order_by('-timetamp')[:n]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 2253, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'timetamp' into field. Choices are: flip_time, id, result
+"GET /flipcoinlast/ HTTP/1.1" 500 88875
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2274
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2325
+"GET /shop/last/2/13 HTTP/1.1" 301 0
+Internal Server Error: /shop/last/2/13/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 20, in get
+    if orders[i].making_date >= date.now():
+                            ^^^^^^^^
+AttributeError: type object 'datetime.date' has no attribute 'now'
+"GET /shop/last/2/13/ HTTP/1.1" 500 76556
+Internal Server Error: /shop/last/2/13/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 20, in get
+    if orders[i].making_date >= date.now():
+                            ^^^^^^^^
+AttributeError: type object 'datetime.date' has no attribute 'now'
+"GET /shop/last/2/13/ HTTP/1.1" 500 76556
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/2/13/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 22, in get
+    return render(request, 'ordersapp/last.html', pokupky)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+              ^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than list.
+"GET /shop/last/2/13/ HTTP/1.1" 500 93169
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/2/13/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 19, in get
+    context = {'spisok pokupok':pokupky}
+                                ^^^^^^
+NameError: name 'pokupk' is not defined. Did you mean: 'pokupky'?
+"GET /shop/last/2/13/ HTTP/1.1" 500 76669
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/last/2/13/ HTTP/1.1" 200 191
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/2/13/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 22, in get
+    pokupky.append(Product.objects.filter(orders[i].product_id)).first()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1492, in build_filter
+    arg, value = filter_expr
+    ^^^^^^^^^^
+TypeError: cannot unpack non-iterable Product object
+"GET /shop/last/2/13/ HTTP/1.1" 500 126409
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/2/13/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 22, in get
+    pokupky.append(Product.objects.filter(id = orders[i].product_id)).first()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'i' into field. Choices are: description, id, name, order, price, quantity, registration_date
+"GET /shop/last/2/13/ HTTP/1.1" 500 138173
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/2/13/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Product'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 22, in get
+    pokupky.append(Product.objects.filter(id = orders[i].product_id).first())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Product: Имя: Chapelnik, описание: ochen nuznaya and poleznaya vesht, цена: 100500, количество: 5, дата регистрации: 1998-01-01>.
+"GET /shop/last/2/13/ HTTP/1.1" 500 157477
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/2/13/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Product'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 22, in get
+    pokupky.append(Product.objects.filter(id = orders[i].product_id).first)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Product: Имя: Chapelnik, описание: ochen nuznaya and poleznaya vesht, цена: 100500, количество: 5, дата регистрации: 1998-01-01>.
+"GET /shop/last/2/13/ HTTP/1.1" 500 157473
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/2/13/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Product'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 22, in get
+    pokupky.append(Product.objects.filter(id = orders[i].product_id).first())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Product: Имя: Chapelnik, описание: ochen nuznaya and poleznaya vesht, цена: 100500, количество: 5, дата регистрации: 1998-01-01>.
+"GET /shop/last/2/13/ HTTP/1.1" 500 157133
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/2/13/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 22, in get
+    pokupky.append(Product.objects.filter(client = client))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'client' into field. Choices are: description, id, name, order, price, quantity, registration_date
+"GET /shop/last/2/13/ HTTP/1.1" 500 138353
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/2/13/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Product'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 22, in get
+    pokupky.append(Product.objects.filter(id = orders[i].product_id).first())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Product: Имя: Chapelnik, описание: ochen nuznaya and poleznaya vesht, цена: 100500, количество: 5, дата регистрации: 1998-01-01>.
+"GET /shop/last/2/13/ HTTP/1.1" 500 157078
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/2/13/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 21, in get
+    pokupky.append(Product.objects[i].name)
+                   ~~~~~~~~~~~~~~~^^^
+TypeError: 'Manager' object is not subscriptable
+"GET /shop/last/2/13/ HTTP/1.1" 500 76385
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/2/13/ HTTP/1.1" 200 127
+"GET /shop/last/1/13/ HTTP/1.1" 200 127
+"GET /shop/last/1/1/ HTTP/1.1" 200 127
+"GET /shop/last/15/1/ HTTP/1.1" 200 127
+"GET /shop/last/15/1/ HTTP/1.1" 200 127
+"GET /shop/last/15/1/ HTTP/1.1" 200 197
+Watching for file changes with StatReloader
+"GET /shop/last/15/1/ HTTP/1.1" 200 350
+"GET /shop/last/15/1/ HTTP/1.1" 200 350
+"GET /shop/last/15/1/ HTTP/1.1" 200 350
+"GET /shop/last/15/1/ HTTP/1.1" 200 350
+"GET /shop/last/15/1/ HTTP/1.1" 200 350
+"GET /shop/last/5/1/ HTTP/1.1" 200 250
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/last/5/1/ HTTP/1.1" 200 250
+"GET /shop/last/3/1/ HTTP/1.1" 200 225
+"GET /shop/last/51/1/ HTTP/1.1" 200 197
+"GET /shop/last/49/1/ HTTP/1.1" 200 225
+"GET /shop/last/32/1/ HTTP/1.1" 200 225
+"GET /shop/last/30/1/ HTTP/1.1" 200 225
+"GET /shop/last/25/1/ HTTP/1.1" 200 250
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/1/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Product'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 21, in get
+    pokupky.append(Product.objects.filter(id = orders[i].product_id).name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Product: Имя: Title3, описание: Description of title #3 is bla bla bla many long text, цена: 105, количество: 40, дата регистрации: 2024-07-11>.
+"GET /shop/last/25/1/ HTTP/1.1" 500 157607
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/1/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Product'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 21, in get
+    pokupky.append(Product.objects.filter(pk = orders[i].product_id).name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Product: Имя: Title3, описание: Description of title #3 is bla bla bla many long text, цена: 105, количество: 40, дата регистрации: 2024-07-11>.
+"GET /shop/last/25/1/ HTTP/1.1" 500 157607
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/1/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Product'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 21, in get
+    pokupky.append(Product.objects.filter(pk = orders[i].product_id)[1].name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Product: Имя: Title3, описание: Description of title #3 is bla bla bla many long text, цена: 105, количество: 40, дата регистрации: 2024-07-11>.
+"GET /shop/last/25/1/ HTTP/1.1" 500 157613
+Internal Server Error: /shop/last/25/1/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Product'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 21, in get
+    pokupky.append(Product.objects.filter(pk = orders[i].product_id)[1].name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Product: Имя: Title3, описание: Description of title #3 is bla bla bla many long text, цена: 105, количество: 40, дата регистрации: 2024-07-11>.
+"GET /shop/last/25/1/ HTTP/1.1" 500 157613
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/1/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Product'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 21, in get
+    pokupky.append(Product.objects.filter(id = orders[i].product_id)[1].name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Product: Имя: Title3, описание: Description of title #3 is bla bla bla many long text, цена: 105, количество: 40, дата регистрации: 2024-07-11>.
+"GET /shop/last/25/1/ HTTP/1.1" 500 157613
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/1/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Product'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 21, in get
+    pokupky.append(Product.objects.filter(id = orders[1].product_id))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Product: Имя: Title7, описание: Description of title #7 is bla bla bla many long text, цена: 117, количество: 87, дата регистрации: 2024-08-19>.
+"GET /shop/last/25/1/ HTTP/1.1" 500 157597
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/1/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Order'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 21, in get
+    pokupky.append(Product.objects.filter(id = orders[1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Order: Order object (107)>.
+"GET /shop/last/25/1/ HTTP/1.1" 500 154407
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/1/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Client'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 21, in get
+    pokupky.append(Product.objects.filter(id = orders[1].client_id))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Client: Имя: Name21, email: mail21@mail.ru, номер телефона: +79924555382, адрес: ул. Советская, д. 93, дата регистрации: 2024-08-06>.
+"GET /shop/last/25/1/ HTTP/1.1" 500 157531
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/1/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 21, in get
+    pokupky.append(Product.objects.filter(id = orders.client_id))
+                                               ^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'client_id'
+"GET /shop/last/25/1/ HTTP/1.1" 500 76662
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/1/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Client'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 21, in get
+    pokupky.append(Product.objects.filter(id = orders[i].client_id))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <Client: Имя: Name21, email: mail21@mail.ru, номер телефона: +79924555382, адрес: ул. Советская, д. 93, дата регистрации: 2024-08-06>.
+"GET /shop/last/25/1/ HTTP/1.1" 500 157531
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /shop/last/25/1/ HTTP/1.1" 200 858
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/1/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 21, in get
+    pokupky.append(Product.objects.filter(id = orders[i].product_id.pk).name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'name'
+"GET /shop/last/25/1/ HTTP/1.1" 500 76692
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/last/25/1/ HTTP/1.1" 200 750
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/last/25/1/ HTTP/1.1" 200 249
+"GET /shop/last/25/1/ HTTP/1.1" 200 249
+"GET /shop/last/25/1/ HTTP/1.1" 200 249
+"GET /shop/last/26/1/ HTTP/1.1" 200 199
+"GET /shop/last/25/1/ HTTP/1.1" 200 249
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /shop/last/25/1/ HTTP/1.1" 200 174
+"GET /shop/last/25/1/ HTTP/1.1" 200 174
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/365/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 19, in get
+    if orders[i].making_date >= date.today()-days:
+                            ~~~~~~~~~~~~^~~~~
+TypeError: unsupported operand type(s) for -: 'datetime.date' and 'int'
+"GET /shop/last/25/365/ HTTP/1.1" 500 76627
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/2/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 19, in get
+    if orders[i].making_date >= date.today()-'0000-00-{days}':
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for -: 'datetime.date' and 'str'
+"GET /shop/last/25/2/ HTTP/1.1" 500 76661
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/2/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 19, in get
+    if orders[i].making_date >= date.today()-date(days):
+                                         ^^^^^^^^^^
+TypeError: function missing required argument 'month' (pos 2)
+"GET /shop/last/25/2/ HTTP/1.1" 500 76676
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/2/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 19, in get
+    if orders[i].making_date >= date.today()-date(0000, 00, days):
+                                         ^^^^^^^^^^^^^^^^^^^^
+ValueError: year 0 is out of range
+"GET /shop/last/25/2/ HTTP/1.1" 500 76570
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/last/25/2/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 19, in get
+    if orders[i].making_date >= date.today()-date(0, 00, days):
+                                         ^^^^^^^^^^^^^^^^^
+ValueError: year 0 is out of range
+"GET /shop/last/25/2/ HTTP/1.1" 500 76558
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/last/25/2/ HTTP/1.1" 200 174
+"GET /shop/last/25/245/ HTTP/1.1" 200 174
+"GET /shop/last/25/1245/ HTTP/1.1" 200 249
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /shop/load_picture_form/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 34, in load_picture_form
+    return render(request, 'ordersapp/upload_image.html', {'form':form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ordersapp/upload_image.html
+"GET /shop/load_picture_form/ HTTP/1.1" 500 81559
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/load_picture_form/ HTTP/1.1" 200 588
+Internal Server Error: /shop/load_picture_form/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view ordersapp.views.load_picture_form didn't return an HttpResponse object. It returned None instead.
+"POST /shop/load_picture_form/ HTTP/1.1" 500 68444
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/load_picture_form/ HTTP/1.1" 200 588
+Internal Server Error: /shop/load_picture_form/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view ordersapp.views.load_picture_form didn't return an HttpResponse object. It returned None instead.
+"POST /shop/load_picture_form/ HTTP/1.1" 500 68444
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/load_picture_form/ HTTP/1.1" 200 588
+"POST /shop/load_picture_form/ HTTP/1.1" 200 588
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /shop/load_picture_form/ HTTP/1.1" 200 1328
+"POST /shop/load_picture_form/ HTTP/1.1" 200 1498
+"POST /shop/load_picture_form/ HTTP/1.1" 200 1497
+"POST /shop/load_picture_form/ HTTP/1.1" 200 1496
+"GET /shop/load_picture_form/ HTTP/1.1" 200 1328
+"POST /shop/load_picture_form/ HTTP/1.1" 200 1470
+"POST /shop/load_picture_form/ HTTP/1.1" 200 1470
+"POST /shop/load_picture_form/ HTTP/1.1" 200 1470
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/load_picture_form/ HTTP/1.1" 200 1347
+Internal Server Error: /shop/load_picture_form/
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table ordersapp_product has no column named image
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py", line 37, in load_picture_form
+    product.save()
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table ordersapp_product has no column named image
+"POST /shop/load_picture_form/ HTTP/1.1" 500 154491
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /shop/load_picture_form/ HTTP/1.1" 200 1347
+"POST /shop/load_picture_form/ HTTP/1.1" 200 1420
+"POST /shop/load_picture_form/ HTTP/1.1" 200 1427
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /shop/load_picture_form/ HTTP/1.1" 200 1335
+"POST /shop/load_picture_form/ HTTP/1.1" 200 1427
+Watching for file changes with StatReloader
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/base.css HTTP/1.1" 200 21544
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+Watching for file changes with StatReloader
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+"GET /static/admin/css/base.css HTTP/1.1" 200 21544
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 5944
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/auth/user/ HTTP/1.1" 200 11915
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+"GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\ordersapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/auth/user/ HTTP/1.1" 200 13093
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/ordersapp/client/ HTTP/1.1" 200 76537
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/ordersapp/order/ HTTP/1.1" 200 45756
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/ordersapp/product/ HTTP/1.1" 200 77125
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/ordersapp/order/ HTTP/1.1" 200 45756
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/ordersapp/order/198/change/ HTTP/1.1" 200 158453
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 15749
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 16630
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14601
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4742
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 15810
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 200 20941
+"GET /static/admin/css/base.css HTTP/1.1" 200 21544
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+C:\Users\ipech\OneDrive\Рабочий стол\Geek\FrJan\myproject\myproject\settings.py changed, reloading.

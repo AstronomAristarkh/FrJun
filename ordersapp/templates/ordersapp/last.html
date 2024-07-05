@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>Последние заказы</p>
+<ul>
+    {% for item in spisok %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+{% endblock %} 

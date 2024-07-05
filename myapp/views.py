@@ -34,3 +34,4 @@ def glav(request):
 
             </p>  """
     return HttpResponse(result)
+
